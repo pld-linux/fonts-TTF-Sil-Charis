@@ -42,17 +42,17 @@ jest więc bardziej użyteczny w wydawaniu tekstów niż Doulos SIL.
 Charis jest fontem szeryfowym, proporcjonalnym, zoptymalizowanym pod
 względem czytelności długich drukowanych dokumentów.
 
-Przezaczeniem niniejszego produktu jest zaoferowanie jednej unikodowej
-rodziny fontów, która zawiera obszerny inwentarz glifów potrzebnych do
-niemal każdego systemu pisma opartego na alfabecie łacińskim bądź
-cyrylicy, zarówno dla potrzeb fonetycznych, jak i ortograficznych.
-Dodatkowo dostarczone są znaki i symbole użyteczne dla językoznawców.
-Font ten używa najnowszych technik fontów wspierających złożone
-zagadnienia typograficzne, takie jak optymalne pozycjonowanie
-dowolnych kombinacji glifów bazowych i diakrytyków.
+Przeznaczeniem niniejszego produktu jest zaoferowanie jednej
+unikodowej rodziny fontów, która zawiera obszerny inwentarz glifów
+potrzebnych do niemal każdego systemu pisma opartego na alfabecie
+łacińskim bądź cyrylicy, zarówno dla potrzeb fonetycznych, jak i
+ortograficznych. Dodatkowo dostarczone są znaki i symbole użyteczne
+dla językoznawców. Font ten używa najnowszych technik fontów
+wspierających złożone zagadnienia typograficzne, takie jak optymalne
+pozycjonowanie dowolnych kombinacji glifów bazowych i diakrytyków.
 
 %prep
-%setup -q -c -T -a0
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
