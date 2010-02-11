@@ -1,12 +1,13 @@
 Summary:	Charis SIL - TrueType Fonts
 Summary(pl.UTF-8):	Charis SIL - fonty TrueType
 Name:		fonts-TTF-CharisSIL
-Version:	4.100
+Version:	4.106
 Release:	1
-License:	SIL Open Font License
+License:	SIL OFL
 Group:		Fonts
+# Source0Download:	http://scripts.sil.org/cms/scripts/render_download.php?site_id=nrsi&format=file&media_id=CharisSIL4.106b.zip&filename=CharisSIL4.106.zip
 Source0:	CharisSIL%{version}.zip
-# Source0-md5:	b4fe96ce17acc58744027acd4298d198
+# Source0-md5:	045aea5116c6c20e5b84e165d9727f0c
 URL:		http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=CharisSILfont
 BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
@@ -52,7 +53,7 @@ wspierających złożone zagadnienia typograficzne, takie jak optymalne
 pozycjonowanie dowolnych kombinacji glifów bazowych i diakrytyków.
 
 %prep
-%setup -q -c
+%setup -q -n CharisSIL
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -71,5 +72,5 @@ fontpostinst TTF
 
 %files
 %defattr(644,root,root,755)
-%doc *.txt *.pdf
-%{ttffontsdir}/*.ttf
+%doc *.txt
+%{ttffontsdir}/CharisSIL*.ttf
